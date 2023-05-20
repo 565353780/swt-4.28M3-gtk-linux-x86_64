@@ -21,7 +21,7 @@ JNIEXPORT jint JNICALL JNI_OnLoad(JavaVM *vm, void *reserved) {
 	(void)reserved;
 
 	JVM = vm;
-	return JNI_VERSION_1_6;
+	return JNI_VERSION_10;
 }
 
 void throwOutOfMemory(JNIEnv *env) {
