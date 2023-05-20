@@ -74,7 +74,7 @@ cd `dirname $0`
 
 MAKE_TYPE=make
 
-export CFLAGS='-O -Wall -fPIC'
+export CFLAGS='-O -Wall -fPIC -I"${JAVA_HOME}/include" -I"${JAVA_HOME}/include/linux"'
 
 # Determine which OS we are on
 if [ "${OS}" = "" ]; then
